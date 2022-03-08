@@ -1,6 +1,6 @@
-/*import '../styles/globals.css'*/
+import '../styles/globals.css'
 import '../styles/styleNav.css'
-import Nav from 'pizzeria/components/Nav.js'
+import Nav from '../components/Nav.js'
 
 function MyApp(/*{ Component, pageProps }*/) {
   return (
