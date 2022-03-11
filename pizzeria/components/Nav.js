@@ -6,7 +6,7 @@ import React, {useState, useEffect} from 'react'
 
 function Nav() {
 
-    const [toggleMenu, setToggleMenu] = useState(false)
+    /*const [toggleMenu, setToggleMenu] = useState(false)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     const toggleNav = () => {
         setToggleMenu(!toggleMenu)
@@ -19,13 +19,13 @@ function Nav() {
         return () => {
             window.removeEventListener('resize', changeWidth)
         }
-  }, [])
+  }, [])*/
 
     return (
         <nav>
             <button onClick={toggleNav} className="btn">BTN</button>
             <h1 className="logo">Pizzeria Don Remolo</h1>
-            {(toggleMenu || screenWidth > 600) && (
+            {/*(toggleMenu || screenWidth > 600) &&*/ (
             <ul className="mainMenu">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Productos</a></li>
