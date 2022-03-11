@@ -1,0 +1,40 @@
+nav{
+    position: fixed;
+    width: 100%;
+    height: 1em;
+    top: 0;
+}
+.btn{
+    display: none;
+    position: absolute;
+    padding: 0.2em;
+}
+.mainMenu{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+li{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.4em;
+}
+@media screen and (max-width:600px){
+    li{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0.2em;
+    }
+    .btn{
+        display: block;
+        color:aqua;
+        background-color: blue;
+    }
+
+}
