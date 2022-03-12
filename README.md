@@ -1,7 +1,8 @@
 # Pizzeria Don Remolo
 <!-- ## Instalación
-## Documentación
-## Autores
+## Documentación -->
+Los iconos utilizados son de [Font Awesome](https://react-icons.github.io/react-icons/icons?name=fa "Font Awesome").
+<!-- ## Autores
 - Alejandro Zapata
 - Robert
 - Ornella Meneghini

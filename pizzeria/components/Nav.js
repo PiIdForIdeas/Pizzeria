@@ -1,11 +1,24 @@
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import { FaBars, FaTimesCircle } from "react-icons/fa"
 
 function Nav() {
+    const openNav = () => {
+        const open = {
+            color: "white",
+            backgroundColor: "DodgerBlue",
+          };
+        const btnOpen={
+            display: "none"
+          }
+        const btnClose={
+            display: "inline"
+        }
+
+    }
+
     return (
         <nav>
-            <button className="btn">BTN</button>
+            <button className="btn"><FaBars /></button>
+            <button className="btn"><FaTimesCircle /></button>
             <h1 className="logo">Pizzeria Don Remolo</h1>
             <ul className="mainMenu">
                 <li><a href="#">Inicio</a></li>
