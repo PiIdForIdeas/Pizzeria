@@ -1,33 +1,28 @@
+import React from 'react'
 import { FaBars, FaTimesCircle } from "react-icons/fa"
 
-function Nav() {
-    const openNav = () => {
-        const open = {
-            color: "white",
-            backgroundColor: "DodgerBlue",
-          };
-        const btnOpen={
-            display: "none"
-          }
-        const btnClose={
-            display: "inline"
-        }
-
-    }
-
+export default function Nav() {
     return (
         <nav>
-            <button className="btn"><FaBars /></button>
-            <button className="btn"><FaTimesCircle /></button>
-            <h1 className="logo">Pizzeria Don Remolo</h1>
-            <ul className="mainMenu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Promociones</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-            </ul> 
-        </ nav>
+            <div className="nav">
+                <div className="container nav-container">
+                    <input className="checkbox" type="checkbox" name="" id="" />
+                    <div className="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>  
+                    <div className="logo">
+                        <h1>Pizzeria Don Remolo</h1>
+                    </div>
+                    <div className="menu-items">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                    </div>
+                </div>
+            </div>
+        </nav>
     )
 }
-
-  export default Nav
