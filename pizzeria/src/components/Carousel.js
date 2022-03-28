@@ -1,5 +1,4 @@
 import React from 'react';
-//import { FaBars, FaTimesCircle } from "react-icons/fa"
 
 export default function Footer() {
     let food = [
@@ -48,7 +47,7 @@ export default function Footer() {
                 <li><p>$ {precio}</p></li>
                 <li><p>{cantidad}</p></li>
             </ol>
-            <button>+</button>
+            <button type="submit">+</button>
         </div>
     )
 }
