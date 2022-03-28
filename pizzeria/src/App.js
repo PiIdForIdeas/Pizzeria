@@ -1,26 +1,19 @@
-import './styleNav.css'
-import Nav from './Nav.js'
+import React from 'react';
+import './styleNav.css';
+import './styleFooter.css';
+import Nav from './Nav.js';
+import Carousel from './components/Carousel.js';
+import Footer from './Footer.js';
 import './App.css';
+//import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function App() {
   return (
-    <Nav />
-    /* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div> */
+    <div>
+      <Nav /><br />
+      <Carousel />< br />
+      <Footer />
+    </div>
   );
 }
 
