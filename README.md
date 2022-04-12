@@ -1,7 +1,7 @@
 # Pizzeria Don Remolo
 ## Instalación
 Para iniciar el programa con los archivos del repositorio abrir la terminal de la PC desde la carpeta del proyecto y no del IDE o del editor de código por posibles errores, escribir: <br>
-```cd pizzeria```<br>
+```cd pizza_webapp```<br>
 ```npm start```<br>
 luego abrir navegador con el link que aparece en la consola.
 ## Documentación
