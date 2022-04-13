@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Card from './Card.js';
 import './styleList.css';
-import Contact from './Contact.js';
+import {FaShoppingCart} from "react-icons/fa";
 
 let List = () => {
     let food = [
@@ -126,7 +126,7 @@ let List = () => {
     const [products,setProducts] = useState(food);
     return (
     <div>
-        <Contact /> 
+        <FaShoppingCart />
         {products.map((product) => {
         return(
             <div>
@@ -139,7 +139,8 @@ let List = () => {
                 />
             </div>
         )
-    })} 
+    })}
+        <button>Comprar</button> 
     </div>);
 }
 
