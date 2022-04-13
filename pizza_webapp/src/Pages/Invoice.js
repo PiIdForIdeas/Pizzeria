@@ -1,10 +1,10 @@
-import React from 'react';
+/* import React from 'react';
 import Contact from '../Components/Contact.js';
 import Testimonios from '../Components/Testimonios.js';
-import Promotions from '../Components/Promotions.js';
+
 import '../App.css';
 
-function Home() {
+function Buy() {
   return (
     <div>
       <Contact />
@@ -14,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Buy; */

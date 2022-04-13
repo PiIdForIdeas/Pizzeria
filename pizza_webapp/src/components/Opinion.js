@@ -1,5 +1,5 @@
 import React from 'react';
-import './styleCarousel.css';
+import './styleHome.css';
 import { FaRegStar } from "react-icons/fa";
 
 let Opinion = (props) => {

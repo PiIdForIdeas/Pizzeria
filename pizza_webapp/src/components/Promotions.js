@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Promo from './Promo.js';
-import './styleCarousel.css';
+import './styleHome.css';
 
 let Promotions = () => {
     let food = [

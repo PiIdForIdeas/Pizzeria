@@ -1,5 +1,5 @@
 import React from 'react';
-import './styleCarousel.css';
+import './styleHome.css';
 
 let Promo = (props) => {
     return(
