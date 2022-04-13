@@ -1,15 +1,19 @@
 import React from 'react';
 //import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
+import { FaFacebook } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 export default function Footer() {
     return (
         <footer>
-            <p>Siganos en:</p>
-            <br />
-            {/* <h4><FaFacebookF /></h4>
-            <h4><FaInstagram /></h4>
-            <h4><FaWhatsapp /></h4> */}
-            <p>Pagina creada por Pi ID for Ideas</p>
+            <div className='social'>
+                <p>Siganos en:</p>
+                
+                <p className='instagram'><FaInstagram /></p>
+                <p className='facebook'><FaFacebook /></p>
+                <p className='whatsapp'><FaWhatsapp /></p>
+            </div>
+            <p className='create'>Pagina creada por Pi ID for Ideas</p>
         </footer>
     )
 }

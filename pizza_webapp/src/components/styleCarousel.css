@@ -16,7 +16,6 @@ body{
 .productInfo{
     display: inline;
     text-align: justify;
-
 }
 .productName{
     text-transform: capitalize;

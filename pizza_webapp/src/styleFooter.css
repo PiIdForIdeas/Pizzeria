@@ -1,3 +1,28 @@
 body{
-    color: #f09f8f;
+    color: #ffffff;
+    
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+.social p{
+    margin-right: 1em;
+    font-size: 2.5em;
+    text-align: center;
+}
+.create{
+    font-size: 1em;
+    text-align: center;
+}
+.instagram:hover{
+    color: #d900d0;
+}
+.facebook:hover{
+    color: #001aff;
+}
+.whatsapp:hover{
+    color: #269713;
 }
