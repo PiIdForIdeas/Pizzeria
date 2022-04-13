@@ -1,9 +1,11 @@
+import '../Styles/styleInvoice.css';
 import '../App.css';
+
 
 function Buy() {
   return (
     <>
-    <div>
+    <div className='invoice'>
         <div>
             <p>Detalles de la compra:</p>
             <p>Producto</p>

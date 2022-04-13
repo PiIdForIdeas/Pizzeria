@@ -1,4 +1,4 @@
-import '../Styles/styleHome.css';
+/* import '../Styles/styleHome.css'; */
 import React from 'react';
 
 let Promo = (props) => {

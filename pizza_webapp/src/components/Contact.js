@@ -1,6 +1,6 @@
+/* import '../Styles/styleHome.css'; */
 import { FaSearch } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import '../Styles/styleHome.css';
 
 function Contact() {
     return(

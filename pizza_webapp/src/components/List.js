@@ -1,4 +1,4 @@
-import '../Styles/styleList.css';
+/* import '../Styles/styleList.css'; */
 import React, { useState } from 'react';
 import Card from './Card.js';
 import {FaShoppingCart} from "react-icons/fa";

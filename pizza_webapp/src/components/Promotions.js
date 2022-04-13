@@ -1,4 +1,4 @@
-import '../Styles/styleHome.css';
+/* import '../Styles/styleHome.css'; */
 import React, { useState } from 'react';
 import Promo from './Promo.js';
 

@@ -1,4 +1,4 @@
-import '../Styles/styleHome.css';
+/*import '../Styles/styleHome.css';*/
 import React, { useState } from 'react';
 import Opinion from './Opinion.js';
 import {FaRegStar} from "react-icons/fa";

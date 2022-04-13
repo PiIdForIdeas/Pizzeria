@@ -1,5 +1,5 @@
 import React from 'react'
-//import { FaBars, FaTimesCircle } from "react-icons/fa"
+//import { FaBars, FaTimesCircle } from "react-icons/fa";
 
 export default function Nav() {
     return (
