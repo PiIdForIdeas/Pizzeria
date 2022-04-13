@@ -1,5 +1,5 @@
+import '../Styles/styleHome.css';
 import React from 'react';
-import './styleHome.css';
 import { FaRegStar } from "react-icons/fa";
 
 let Opinion = (props) => {

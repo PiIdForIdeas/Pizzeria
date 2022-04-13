@@ -1,5 +1,5 @@
+import '../Styles/styleList.css';
 import React from 'react';
-import './styleList.css';
 
 let Card = (props) => {
     return(

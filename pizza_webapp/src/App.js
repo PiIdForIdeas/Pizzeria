@@ -12,8 +12,8 @@ function App() {
   return (
     <div>
       <Nav />
-      <Home />
-      {/* <ListProducts /> */}
+      {/* <Home />
+      <ListProducts /> */}
       <Footer />
     </div>
   );

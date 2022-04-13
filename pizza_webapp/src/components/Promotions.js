@@ -1,6 +1,6 @@
+import '../Styles/styleHome.css';
 import React, { useState } from 'react';
 import Promo from './Promo.js';
-import './styleHome.css';
 
 let Promotions = () => {
     let food = [

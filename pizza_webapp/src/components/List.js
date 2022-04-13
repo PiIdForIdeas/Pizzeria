@@ -1,6 +1,6 @@
+import '../Styles/styleList.css';
 import React, { useState } from 'react';
 import Card from './Card.js';
-import './styleList.css';
 import {FaShoppingCart} from "react-icons/fa";
 
 let List = () => {

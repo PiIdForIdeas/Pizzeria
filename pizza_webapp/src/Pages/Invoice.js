@@ -1,17 +1,31 @@
-/* import React from 'react';
-import Contact from '../Components/Contact.js';
-import Testimonios from '../Components/Testimonios.js';
-
 import '../App.css';
 
 function Buy() {
   return (
+    <>
     <div>
-      <Contact />
-      <Promotions /><br /><br />
-      <Testimonios />
+        <div>
+            <p>Detalles de la compra:</p>
+            <p>Producto</p>
+            <p>$ precio</p>
+        </div>
+        <div>
+            <p>Subtotal:</p>
+            <p>Envio</p>
+            <p>$ precio</p>
+        </div>
+        <div>
+            <p>Total</p>
+            <p>$ precio</p>
+        </div>
+        <div>
+            <p>Medio de pago:</p>
+            <p>$ precio</p>
+        </div>
+        <button>Pagar</button>
     </div>
+    </>
   );
 }
 
-export default Buy; */
+export default Buy;

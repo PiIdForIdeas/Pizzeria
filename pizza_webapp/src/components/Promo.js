@@ -1,5 +1,5 @@
+import '../Styles/styleHome.css';
 import React from 'react';
-import './styleHome.css';
 
 let Promo = (props) => {
     return(
