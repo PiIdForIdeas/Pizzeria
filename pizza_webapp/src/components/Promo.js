@@ -1,17 +1,16 @@
 import React from 'react';
-import './styleList.css';
+import './styleCarousel.css';
 
-let Card = (props) => {
+let Promo = (props) => {
     return(
-        <div className='card'>
+        <div className='box'>
             <img src={props.img} alt={props.name} />
             <ol className='productInfo'>
                 <li className='productName'>{props.name} {props.size}</li>
                 <li>$ {props.price}</li>
             </ol>
-            <button type="submit" className='submitPlus'>+</button>
         </div>
     )
 }
 
-export default Card;
+export default Promo;

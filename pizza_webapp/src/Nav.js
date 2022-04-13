@@ -5,9 +5,9 @@ export default function Nav() {
     return (
         <nav>
             <div className="nav">
-                <div className="logo">
+                {/* <div className="logo">
                     <h1>Pizzeria Don Remolo</h1>
-                </div>
+                </div> */}
                 <div className="container nav-container">
                     <input className="checkbox" type="checkbox" name="" id="" />
                     <div className="hamburger-lines">

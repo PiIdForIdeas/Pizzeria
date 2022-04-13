@@ -1,5 +1,4 @@
 import React from 'react';
-//import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -8,7 +7,6 @@ export default function Footer() {
         <footer>
             <div className='social'>
                 <p>Siganos en:</p>
-                
                 <p className='instagram'><FaInstagram /></p>
                 <p className='facebook'><FaFacebook /></p>
                 <p className='whatsapp'><FaWhatsapp /></p>

@@ -1,22 +1,8 @@
 import React, { useState } from 'react';
-import Card from './Card.js';
+import Promo from './Promo.js';
 import './styleCarousel.css';
 
-import muzarella from './img_pizzas/muzzarella.jpg';
-import napolitana from './img_pizzas/napolitana.jpg';
-import jamonymorrones from './img_pizzas/jamonymorron.webp';
-import empanada_carne from './img_empanadas/empanada_carne.jpg';
-import empanada_jamonyqueso from './img_empanadas/empanada_jamonyqueso.jpg';
-import empanada_atun from './img_empanadas/empanada_atun.jpg';
-import gaseosa from './img_bebidas/gaseosa.jpg';
-import agua from './img_bebidas/agua.jpg';
-import cerveza from './img_bebidas/cerveza.jpg';
-import almendrado from './img_postres/almendrado.jpg';
-import bombones from './img_postres/bombones.jpg';
-import helado from './img_postres/helado.jpg';
-import logo from '../img/logo.jpg';
-
-let Carousel = () => {
+let Promotions = () => {
     let food = [
         {
             id:1,
@@ -25,7 +11,7 @@ let Carousel = () => {
             size:'1 Mtrs',
             price:2000,
             amount:1,
-            img: {muzarella},
+            img: "logo",
         },
         {
             id:2,
@@ -34,7 +20,7 @@ let Carousel = () => {
             size:'Grande',
             price:2000,
             cantidad:1,
-            img: {napolitana},
+            img: "logo",
         },
         {
             id:3,
@@ -43,7 +29,7 @@ let Carousel = () => {
             size:'Pequeña',
             price:800,
             amount:1,
-            img: {jamonymorrones},
+            img: "logo",
         },
         {
             id:4,
@@ -52,7 +38,7 @@ let Carousel = () => {
             size:'standard',
             price:2000,
             amount:12,
-            img: {empanada_carne},
+            img: "logo",
         },
         {
             id:5,
@@ -61,7 +47,7 @@ let Carousel = () => {
             size:'standard',
             price:2000,
             amount:12,
-            img: {empanada_jamonyqueso},
+            img: "logo",
         },
         {
             id:6,
@@ -70,7 +56,7 @@ let Carousel = () => {
             size:'standard',
             price:2000,
             amount:12,
-            img: {empanada_atun},
+            img: "logo",
         },
         {
             id:7,
@@ -79,7 +65,7 @@ let Carousel = () => {
             size:'2.5 Lts',
             price:1000,
             amount:1,
-            img: {gaseosa},
+            img: "logo",
         },
         {
             id:8,
@@ -88,7 +74,7 @@ let Carousel = () => {
             size:'2.5 Lts',
             price:1000,
             amount:1,
-            img: {agua},
+            img: "logo",
         },
         {
             id:9,
@@ -97,7 +83,7 @@ let Carousel = () => {
             size:'1 Lts',
             price:1200,
             amount:1,
-            img: {cerveza},
+            img: "logo",
         },
         {
             id:10,
@@ -106,7 +92,7 @@ let Carousel = () => {
             size:'1 Kgs',
             price:2000,
             amount:1,
-            img: {almendrado},
+            img: "logo",
         },
         {
             id:11,
@@ -115,7 +101,7 @@ let Carousel = () => {
             size:'1 Kgs',
             price:2000,
             amount:1,
-            img: {helado},
+            img: "logo",
         },
         {
             id:12,
@@ -124,7 +110,7 @@ let Carousel = () => {
             size:'1 Kgs',
             price:2000,
             amount:1,
-            img: {bombones},
+            img: "logo",
         },
         {
             id:13,
@@ -133,7 +119,7 @@ let Carousel = () => {
             size:'1 rebanada',
             price:2000,
             amount:1,
-            img: {logo},
+            img: "logo",
         },
     ]
     const [products,setProducts] = useState(food);
@@ -142,7 +128,7 @@ let Carousel = () => {
         {products.map((product) => {
         return(
             <div>
-            <Card 
+            <Promo 
                 img={product.img}
                 key={product.id}
                 name={product.name} 
@@ -155,4 +141,4 @@ let Carousel = () => {
     </div>);
 }
 
-export default Carousel;
+export default Promotions;
