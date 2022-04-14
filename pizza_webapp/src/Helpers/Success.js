@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from '../Pages/Home.js';
 
 export default function Success() {
     return (
@@ -7,7 +8,8 @@ export default function Success() {
             <p>Su envío esta en camino.<br /> 
             Llegará pronto.<br />
             Disfrute su día!</p>
-            <button type="submit">Inicio</button>
+            <button onClick={<Home />}>Inicio</button>
+            
         </div>
     )
 }

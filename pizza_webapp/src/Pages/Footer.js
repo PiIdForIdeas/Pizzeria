@@ -1,7 +1,6 @@
 import React from 'react';
-import { FaFacebook } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
+
 export default function Footer() {
     return (
         <footer>

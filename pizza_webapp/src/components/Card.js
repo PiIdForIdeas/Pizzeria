@@ -6,7 +6,7 @@ let Card = (props) => {
         <div className='card'>
             <img src={props.img} alt={props.name} />
             <ol className='productInfo'>
-                <li className='productName'>{props.name} {props.size}</li>
+                <li className='productName'>{props.name} {props.size} {props.amount}</li>
                 <li>$ {props.price}</li>
             </ol>
             <button type="submit" className='submitPlus'>+</button>
