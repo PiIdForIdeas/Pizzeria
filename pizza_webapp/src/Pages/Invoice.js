@@ -2,10 +2,11 @@ import '../Styles/styleInvoice.css';
 import '../App.css';
 /* import ListOfProducts from '../Helpers/ListOfProducts.js'; */
 
-function Buy() {
+function Buy(props) {
+    const {foodItems, onAdd, onRemove} = props;
     const price = 1000;
     const subtotal = price;
-    const delivery_cost = 200;
+    const delivery_cost = price*0.3;
     const total = subtotal+delivery_cost;
     const payment_method = ['efectivo','MasterCard','VISA','MercadoPago'];
   return (
@@ -34,7 +35,14 @@ function Buy() {
                 <option value="payment_method[2]">{payment_method[2]}</option>
                 <option value="payment_method[3]">{payment_method[3]}</option>
             </select>
+            {/* <button onClick={() => onRemove(item)} className="remove">
+                -
+              </button>{' '}
+              <button onClick={() => onAdd(item)} className="add">
+                +
+              </button> */}
         </div>
+        
         <button onClick={() => alert("Exito!! Su envío esta en camino. Llegará pronto. Disfrute su día!")}>Pagar</button>
     </div>
     </>
