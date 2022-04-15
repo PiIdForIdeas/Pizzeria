@@ -6,7 +6,7 @@ function Contact() {
     return(
         <>
         <div className='searchBtn'>
-            <p>Bienvenido! Qué desea pedir? <FaSearch /></p>
+            <p><a href="./Pages/ListProducts.js">Bienvenido! Qué desea pedir? <FaSearch /></a></p>
         </div>
         <div>
             <p><FaPhoneAlt /> 11 5555 5555</p><br />

@@ -7,7 +7,7 @@ const ListOfProducts = {
         size:'1 Mtrs',
         price:2000,
         amount:0,
-        img: "/img/img_pizzas/muzzarella.jpg",
+        img: "/img/muzzarella.jpg",
     },
     {
         id:2,
@@ -16,7 +16,7 @@ const ListOfProducts = {
         size:'Grande',
         price:2000,
         amount:0,
-        img: "/img/img_pizzas/napolitana.jpg",
+        img: "/img/napolitana.jpg",
     },
     {
         id:3,
@@ -25,7 +25,7 @@ const ListOfProducts = {
         size:'Pequeña',
         price:800,
         amount:0,
-        img: "/img/img_pizzas/jamonymorron.webp",
+        img: "/img/jamonymorron.webp",
     },
     {
         id:4,
@@ -34,7 +34,7 @@ const ListOfProducts = {
         size:'standard',
         price:2000,
         amount:0,
-        img: "/img/img_empanadas/empanada_carne.jpg",
+        img: "/img/empanada_carne.jpg",
     },
     {
         id:5,
@@ -43,7 +43,7 @@ const ListOfProducts = {
         size:'standard',
         price:2000,
         amount:0,
-        img: "/img/img_empanadas/empanada_jamonyqueso.jpg",
+        img: "/img/empanada_jamonyqueso.jpg",
     },
     {
         id:6,
@@ -52,7 +52,7 @@ const ListOfProducts = {
         size:'standard',
         price:2000,
         amount:0,
-        img: "/img/img_empanadas/empanada_atun.jpg",
+        img: "/img/empanada_atun.jpg",
     },
     {
         id:7,
@@ -61,7 +61,7 @@ const ListOfProducts = {
         size:'2.5 Lts',
         price:1000,
         amount:0,
-        img: "/img/img_bebidas/gaseosa.jpg",
+        img: "/img/gaseosa.jpg",
     },
     {
         id:8,
@@ -70,7 +70,7 @@ const ListOfProducts = {
         size:'2.5 Lts',
         price:1000,
         amount:0,
-        img: "/img/img_bebidas/agua.jpg",
+        img: "/img/agua.jpg",
     },
     {
         id:9,
@@ -79,7 +79,7 @@ const ListOfProducts = {
         size:'1 Lts',
         price:1200,
         amount:0,
-        img: "/img/img_bebidas/cerveza.jpg",
+        img: "/img/cerveza.jpg",
     },
     {
         id:10,
@@ -88,7 +88,7 @@ const ListOfProducts = {
         size:'1 Kgs',
         price:2000,
         amount:0,
-        img: "/img/img_postres/almendrado.jpg",
+        img: "/img/almendrado.jpg",
     },
     {
         id:11,
@@ -97,7 +97,7 @@ const ListOfProducts = {
         size:'1 unidad',
         price:2000,
         amount:0,
-        img: "/img/img_postres/helado.jpg",
+        img: "/img/helado.jpg",
     },
     {
         id:12,
@@ -106,7 +106,7 @@ const ListOfProducts = {
         size:'100 Grs',
         price:2000,
         amount:0,
-        img: "/img/img_postres/bombones.jpg",
+        img: "/img/bombones.jpg",
     },
     {
         id:13,

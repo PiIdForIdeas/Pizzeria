@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 //import { FaBars, FaTimesCircle } from "react-icons/fa";
 
 export default function Nav() {
@@ -17,7 +17,7 @@ export default function Nav() {
                     </div>  
                     <div className="menu-items">
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="./Pages/ListProducts.js">Productos</a></li>
                         <li><a href="#">Promociones</a></li>
                         <li><a href="#">Sobre Nosotros</a></li>
                     </div>
