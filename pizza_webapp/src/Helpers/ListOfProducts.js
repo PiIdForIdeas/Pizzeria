@@ -7,7 +7,7 @@ const ListOfProducts = {
         size:'1 Mtrs',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_pizzas/muzzarella.jpg",
     },
     {
         id:2,
@@ -16,7 +16,7 @@ const ListOfProducts = {
         size:'Grande',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_pizzas/napolitana.jpg",
     },
     {
         id:3,
@@ -25,7 +25,7 @@ const ListOfProducts = {
         size:'Pequeña',
         price:800,
         amount:0,
-        img: "logo",
+        img: "/img/img_pizzas/jamonymorron.webp",
     },
     {
         id:4,
@@ -34,7 +34,7 @@ const ListOfProducts = {
         size:'standard',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_empanadas/empanada_carne.jpg",
     },
     {
         id:5,
@@ -43,7 +43,7 @@ const ListOfProducts = {
         size:'standard',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_empanadas/empanada_jamonyqueso.jpg",
     },
     {
         id:6,
@@ -52,7 +52,7 @@ const ListOfProducts = {
         size:'standard',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_empanadas/empanada_atun.jpg",
     },
     {
         id:7,
@@ -61,7 +61,7 @@ const ListOfProducts = {
         size:'2.5 Lts',
         price:1000,
         amount:0,
-        img: "logo",
+        img: "/img/img_bebidas/gaseosa.jpg",
     },
     {
         id:8,
@@ -70,7 +70,7 @@ const ListOfProducts = {
         size:'2.5 Lts',
         price:1000,
         amount:0,
-        img: "logo",
+        img: "/img/img_bebidas/agua.jpg",
     },
     {
         id:9,
@@ -79,7 +79,7 @@ const ListOfProducts = {
         size:'1 Lts',
         price:1200,
         amount:0,
-        img: "logo",
+        img: "/img/img_bebidas/cerveza.jpg",
     },
     {
         id:10,
@@ -88,25 +88,25 @@ const ListOfProducts = {
         size:'1 Kgs',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_postres/almendrado.jpg",
     },
     {
         id:11,
         name:'helado',
         type:'postres',
-        size:'1 Kgs',
+        size:'1 unidad',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_postres/helado.jpg",
     },
     {
         id:12,
         name:'Bombones',
         type:'postres',
-        size:'1 Kgs',
+        size:'100 Grs',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/img_postres/bombones.jpg",
     },
     {
         id:13,
@@ -115,7 +115,7 @@ const ListOfProducts = {
         size:'1 rebanada',
         price:2000,
         amount:0,
-        img: "logo",
+        img: "/img/logo.jpg",
     },
 ]
 };
