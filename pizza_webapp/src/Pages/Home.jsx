@@ -4,9 +4,6 @@ import Testimonios from '../components/Testimonios.js';
 import Promotions from '../components/Promotions.js';
 import '../App.css';
 
-import Nav from '../components/Nav.js';
-import Footer from '../components/Footer.js';
-
 const Home = () => {
   return (
     <div>

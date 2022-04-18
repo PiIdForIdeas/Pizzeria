@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPizzaSlice } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import Sidebar from "./NavSidebar.js";
@@ -33,18 +33,23 @@ const Nav =()=>{
     };
     return(
         <>
-        <div className='nav'>
-            <Link to="/" className="logo">Pizzería Don Remolo</Link>
-            <div className='nav-links'>
-                { links.map(link=>(
-                    <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
-                )) }
+        <nav>
+            <div className='navbar'>
+                <div className='burger'>
+                    <div onClick={() => setShowSidebar(true)} className={showSidebar ? "burgerBtnActive" : "burgerBtn"}>
+                        <FaBars />
+                    </div>
+                </div>
+                <Link to="/" className="logo">Pizzería Don Remolo</Link>
+                <div className='nav-links'>
+                    { links.map(link=>(
+                        <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
+                    )) }
+                </div>
+                
             </div>
-            <div onClick={() => setShowSidebar(true)} className={showSidebar ? "burgerBtnActive" : "burgerBtn"}>
-                <FaPizzaSlice />
-            </div>
-        </div>
-        { showSidebar && <Sidebar close={closeSidebar} links={links} /> }
+            { showSidebar && <Sidebar close={closeSidebar} links={links} /> }
+        </nav>
         </>
     )
 };
@@ -54,11 +59,11 @@ export default Nav;
 /* export default function Nav() {
     return (
         <nav>
-            <div className="nav">
+            <div className="navbar">
                 <div className="logo">
                     <h1>Pizzeria Don Remolo</h1>
                 </div>
-                <div className="container nav-container">
+                <div className="navbarCtn">
                     <input className="checkbox" type="checkbox" name="" id="" />
                     <div className="hamburger-lines">
                         <span class="line line1"></span>

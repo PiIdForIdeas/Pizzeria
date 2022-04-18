@@ -40,7 +40,7 @@ let Testimonios = () => {
     <div className='stars'> 
         {opinions.map((opinion) => {
         return(
-            <div>
+            <div className='opinion'>
             <Opinion 
                 star1={opinion.star1}
                 star2={opinion.star2}
