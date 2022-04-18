@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PageNotFound = () => (
+const PageNotFound = () => {
   <section className="PageNotFound">
     <h3>Error 404</h3>
     <p>Página no encontrada</p>
@@ -9,6 +9,6 @@ const PageNotFound = () => (
     Disculpe las molestias.</p>
     <button type="submit">Intentar de nuevo</button>
   </section>
-)
+};
 
-export default PageNotFound
+export default PageNotFound;

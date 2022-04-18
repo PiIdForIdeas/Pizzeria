@@ -1,7 +1,7 @@
 /* import '../Styles/styleList.css'; */
 import React, { useState } from 'react';
 import Card from './Card.js';
-import ListOfProducts from '../Helpers/ListOfProducts.js';
+import ListOfProducts from '../helpers/data.js';
 import {FaShoppingCart} from "react-icons/fa";
 
 let List = () => {

@@ -1,9 +1,10 @@
 /* import '../Styles/styleHome.css'; */
 import React, { useState } from 'react';
 import Promo from './Promo.js';
-import ListOfProducts from '../Helpers/ListOfProducts.js';
+import ListOfProducts from '../helpers/data.js';
 
-let Promotions = () => {
+
+const Promotions = () => {
     const {food} = ListOfProducts;
     const [products,setProducts] = useState(food);
     return (

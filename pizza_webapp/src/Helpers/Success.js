@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../Pages/Home.js';
+import Home from '../pages/Home.jsx';
 
 export default function Success() {
     return (

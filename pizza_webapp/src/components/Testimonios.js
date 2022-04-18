@@ -1,7 +1,9 @@
 /*import '../Styles/styleHome.css';*/
 import React, { useState } from 'react';
 import Opinion from './Opinion.js';
+import '../Styles/styleCarousel.css';
 import {FaRegStar} from "react-icons/fa";
+
 
 let Testimonios = () => {
     let review = [
@@ -35,7 +37,7 @@ let Testimonios = () => {
     ]
     const [opinions,setOpinions] = useState(review);
     return (
-    <div> 
+    <div className='stars'> 
         {opinions.map((opinion) => {
         return(
             <div>

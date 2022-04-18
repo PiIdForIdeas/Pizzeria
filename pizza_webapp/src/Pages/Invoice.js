@@ -1,6 +1,8 @@
 import '../Styles/styleInvoice.css';
 import '../App.css';
 /* import ListOfProducts from '../Helpers/ListOfProducts.js'; */
+import Nav from '../components/Nav.js';
+import Footer from '../components/Footer.js';
 
 function Buy(props) {
     const {foodItems, onAdd, onRemove} = props;

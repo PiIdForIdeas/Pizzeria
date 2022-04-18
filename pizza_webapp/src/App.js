@@ -1,34 +1,44 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
+  Routes,
+  Route
 } from "react-router-dom";
 
-import './Styles/styleNav.css';
-import './Styles/styleFooter.css';
 import './Styles/styleHome.css';
 import './Styles/styleInvoice.css';
 import './Styles/styleList.css';
 
-import Nav from './Pages/Nav.js';
-import Home from './Pages/Home.js';
-import ListProducts from './Pages/ListProducts.js';
-import Invoice from './Pages/Invoice.js';
-import Footer from './Pages/Footer.js';
-import Success from './Helpers/Success.js';
-import PageNotFound from './Helpers/PageNotFound.js'
+import Nav from "./components/Nav.js";
+import Footer from "./components/Footer.js";
+import Promotions from "./components/Promotions.js";
+import Home from './pages/Home.jsx';
+import ListProducts from './pages/ListProducts.js';
+import Invoice from './pages/Invoice.js';
+import About from './pages/About.js';
+import Success from './helpers/Success.js';
+import PageNotFound from './helpers/PageNotFound.js';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div>
+      <Router>
+        <Nav />
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ListProducts />} />
+            <Route path="/promotions" element={<Promotions />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </Router>
+      {/* <Home />
       <Nav />
       <Invoice />
-      <Home /> 
-      <ListProducts />
+      <ListProducts />  */}
       <Footer />
     </div>
   );

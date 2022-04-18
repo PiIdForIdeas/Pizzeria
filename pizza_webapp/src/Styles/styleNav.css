@@ -1,24 +1,39 @@
-.nav {
+.nav{
+    display: flex;
     width: 100%;
-    /*box-shadow: 0 1px 4px rgba(138, 1, 1, 0.842);*/
-    background: rgb(0, 0, 0);
+    height: 2em;
+    background: rgb(94, 2, 2);
     color: rgb(255, 255, 255);
+    position: fixed;
+    justify-content: space-between;
 }
+.logo{
+    color: rgb(94, 2, 2);
+    background-color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 4em;
+}
+.nav-links{
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+
+/* .navSidebar{
+    color: rgb(14, 179, 179);
+} */
 
 @media  screen and (max-width:700px) {  
     .nav .nav-container a {
         font-weight: 500;
         font-size: 1.2rem;
-        /*padding: 0.7rem;*/
+        padding: 0.7rem;
     }
     .nav-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /*height: 70px;*/
         display: block;
         position: relative;
-        /*height: 60px;*/
     }
     .nav .menu-items li {
         margin-bottom: 1.2rem;
@@ -28,24 +43,20 @@
         position: absolute;
         top: 5px;
         right: 15px;
-        /*font-size: 1em;
-        color: #0e2431;*/
         text-align: center;
     }
     .nav .menu-items {
         padding-top: 120px;
-        background-color: rgba(175, 20, 6, 0.671);
+        background-color: rgba(156, 31, 19, 0.671);
         height: 100vh;
         width: 100%;
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
-        /*margin-left: -40px;
-        padding-left: 50px;*/
         transition: transform 0.4s ease-in-out;
         text-align: center;
     }
-    .checkbox {
+    /* .checkbox {
         position: absolute;
         display: block;
         height: 32px;
@@ -55,7 +66,7 @@
         z-index: 5;
         opacity: 0;
         cursor: pointer;
-    }
+    } */
     .nav-container .hamburger-lines {
         display: block;
         height: 26px;
@@ -70,7 +81,7 @@
     }
     .nav-container .hamburger-lines .line {
         display: block;
-        height: 4px;
+        /*height: 4px;*/
         width: 100%;
         border-radius: 10px;
         background: #d1d1d1;
@@ -109,17 +120,15 @@
         flex-direction: row;
     }
     .nav .menu-items li {
-        margin-left: 1.5em;
+        margin-left: 2em;
         font-size: 1em;
     }
-    .checkbox {
+    /*.checkbox {
         display: none;
-    }
+    }*/
     .logo {
-        position: absolute;
-        left: 2em;
         font-size: 1em;
-        color: #168dd3;
         text-align: center;
+        justify-content: left;
     }
 }
