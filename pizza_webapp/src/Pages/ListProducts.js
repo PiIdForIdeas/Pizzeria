@@ -1,14 +1,19 @@
 import React from 'react';
 import List from '../components/List.js';
+import ListType from '../components/ListType.js';
 import '../App.css';
 
-import Nav from '../components/Nav.js';
-import Footer from '../components/Footer.js';
 
 function ListProducts() {
   return (
-    <div className='ListProducts'>
-      <List />
+    <div>
+      <h5 className='btn'>Qué desea comer?</h5>
+      <ListType />
+      <h4>Los más elegidos</h4>
+      <div className='ListProducts'>
+        <List />
+      </div>
+      <button className='btn'>Comprar</button> 
     </div>
   );
 }

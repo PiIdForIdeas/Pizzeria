@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './Styles/styleHome.css';
 import './Styles/styleInvoice.css';
@@ -32,6 +28,7 @@ const App = () => {
             <Route path="/products" element={<ListProducts />} />
             <Route path="/promotions" element={<Promotions />} />
             <Route path="/about" element={<About />} />
+            <Route path="/invoice" element={<Invoice />} />
           </Routes>
         </div>
       </Router>

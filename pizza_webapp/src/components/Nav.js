@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaShoppingCart } from "react-icons/fa";
 import { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import Sidebar from "./NavSidebar.js";
-
 import '../Styles/styleNav.css';
 
 const Nav =()=>{
@@ -46,7 +45,20 @@ const Nav =()=>{
                         <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
                     )) }
                 </div>
-                
+                <Link to="/" className="logo">Pizzería Don Remolo</Link>
+                <div className='nav-links'>
+                    { links.map(link=>(
+                        <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
+                    )) }
+                </div>
+                <div >
+                    <Link to="/invoice" classname="cartIcon">
+                    <p>
+                        <FaShoppingCart />
+                        5
+                    </p>
+                </Link>
+                </div>
             </div>
             { showSidebar && <Sidebar close={closeSidebar} links={links} /> }
         </nav>
@@ -55,29 +67,3 @@ const Nav =()=>{
 };
 
 export default Nav;
-
-/* export default function Nav() {
-    return (
-        <nav>
-            <div className="navbar">
-                <div className="logo">
-                    <h1>Pizzeria Don Remolo</h1>
-                </div>
-                <div className="navbarCtn">
-                    <input className="checkbox" type="checkbox" name="" id="" />
-                    <div className="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>  
-                    <div className="menu-items">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="./Pages/ListProducts.js">Productos</a></li>
-                        <li><a href="#">Promociones</a></li>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    )
-} */

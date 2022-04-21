@@ -1,11 +1,11 @@
 /* import '../Styles/styleHome.css'; */
 import React, { useState } from 'react';
 import Promo from './Promo.js';
-import ListOfProducts from '../helpers/data.js';
+import ListOfPromos from '../helpers/promo.js';
 
 
 const Promotions = () => {
-    const {food} = ListOfProducts;
+    const {food} = ListOfPromos;
     const [products,setProducts] = useState(food);
     return (
     <div> 
