@@ -4,10 +4,21 @@ import { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import Sidebar from "./NavSidebar.js";
 import '../Styles/styleNav.css';
+import ListOfProducts from '../helpers/data.js';
+import ListOfPromos from '../helpers/promo.js';
 
 const Nav =()=>{
     const [showSidebar,setShowSidebar] = useState(false);
     const location = useLocation();
+    function sumProperty(arr, type) {
+        return arr.reduce((total, obj) => {
+          return total + obj[type];
+        }, 0);
+    };
+    const sumAmount = sumProperty(ListOfProducts, "amount");
+    const sumAmountPromo = sumProperty(ListOfPromos, "amount");
+
+    const sumTotalAmount = sumAmount + sumAmountPromo;
     const links = [
         {
             name: "Inicio",
@@ -51,12 +62,12 @@ const Nav =()=>{
                         <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
                     )) }
                 </div>
-                <div >
+                <div className='shoppingCart'>
                     <Link to="/invoice" classname="cartIcon">
                     <p>
-                        <FaShoppingCart />
-                        5
+                        <FaShoppingCart /><span className='sumAmount'>{sumTotalAmount}</span>
                     </p>
+                    
                 </Link>
                 </div>
             </div>

@@ -1,12 +1,12 @@
-const ListOfProducts = {
-  food : [
+const ListOfProducts = /* {
+  food : */ [
   {
       id:1,
       name:'Muzzarella',
       type:'pizzas',
       size:'1 Mtrs',
       price:2000,
-      amount:0,
+      amount:1,
       img: "/img/muzzarella.jpg",
   },
   {
@@ -24,7 +24,7 @@ const ListOfProducts = {
       type:'pizzas',
       size:'Pequeña',
       price:800,
-      amount:0,
+      amount:1,
       img: "/img/jamonymorron.webp",
   },
   {
@@ -117,7 +117,7 @@ const ListOfProducts = {
       amount:0,
       img: "/img/logo.jpg",
   },
-]
-};
+];
+/* }; */
 
 export default ListOfProducts;

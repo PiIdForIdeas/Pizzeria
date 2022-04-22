@@ -145,3 +145,14 @@
         justify-content: left;
     }
 }
+.shoppingCart{
+    display: flex;
+    flex-direction: row;
+}
+.sumAmount{
+    background-color: #bb1f00;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    font-size: smaller;
+    padding: 0.3em;
+}

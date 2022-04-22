@@ -1,12 +1,12 @@
-const ListOfPromos = {
-  food : [
+const ListOfPromos = /*{
+  food : */[
   {
       id:1,
       name:'1 Muzzarella grande + 1 Calabresa + 1 Brahama 1Ltr',
       type:'promos',
       size:'1 Mtrs',
       price:2000,
-      amount:0,
+      amount:1,
       img: "/img/muzzarella.jpg",
   },
   {
@@ -37,6 +37,6 @@ const ListOfPromos = {
       img: "/img/empanada_carne.jpg",
   }
 ]
-};
+/*}*/;
 
 export default ListOfPromos;

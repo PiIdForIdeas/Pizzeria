@@ -1,8 +1,15 @@
 /* import '../Styles/styleList.css'; */
-import React from 'react';
 import { Redirect } from "react-router-dom";
+import React, {useState} from 'react';
 
 let Card = (props) => {
+    /* const [result, setResult] = useState(""); */
+    /* const handleClick = (event) => {
+        const amount = {props.amount}+1;
+    } */
+    /* const clear =()=> {
+        {props.amount}
+    } */
     return(
         <div className='card'>
             <img src={props.img} alt={props.name} />
@@ -11,12 +18,9 @@ let Card = (props) => {
                 <li>$ {props.price}</li>
             </ol>
             {/* <button type="submit" className='submitPlus'>+</button> */}
-            <div className='amountChange'>
-            <button className="submitPlus" onClick={() => {
-                    this.props.onIncrement(this.state.product, 10);
-                }}>+
-            </button>
-            </div>
+            {/* <div className='amountChange'>
+            <button name ="1" onClick={handleClick} value="1">+</button>
+            </div> */}
         </div>
     )
 }
