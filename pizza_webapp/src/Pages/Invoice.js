@@ -1,5 +1,5 @@
 import CartEmpty from '../helpers/CartEmpty.js';
-import ListOfProducts from '../helpers/data.js';
+import ListOfProducts from '../helpers/data';
 import '../Styles/styleInvoice.css';
 import '../App.css';
 
@@ -184,6 +184,7 @@ function Buy(props) {
         <textarea placeholder="Inserte un comentario para el cocinero o repartidor :) Ej: No funciona el timbre, golpee la puerta por favor." />
       </div>
       <button onClick={() => alert("Exito!! Su envío esta en camino. Llegará pronto. Disfrute su día!")}>Pagar</button>
+      <button>Vaciar carrito</button>
   </div>
   </>
   );

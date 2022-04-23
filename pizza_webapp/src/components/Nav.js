@@ -2,10 +2,12 @@ import React from 'react';
 import { FaBars, FaShoppingCart } from "react-icons/fa";
 import { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
+
 import Sidebar from "./NavSidebar.js";
-import '../Styles/styleNav.css';
-import ListOfProducts from '../helpers/data.js';
+import food from '../helpers/data.js';
 import ListOfPromos from '../helpers/promo.js';
+
+import '../Styles/styleNav.css';
 
 const Nav =()=>{
     const [showSidebar,setShowSidebar] = useState(false);
@@ -15,25 +17,25 @@ const Nav =()=>{
           return total + obj[type];
         }, 0);
     };
-    const sumAmount = sumProperty(ListOfProducts, "amount");
+    const sumAmount = sumProperty(food, "amount");
     const sumAmountPromo = sumProperty(ListOfPromos, "amount");
 
     const sumTotalAmount = sumAmount + sumAmountPromo;
     const links = [
         {
-            name: "Inicio",
+            info: "Inicio",
             path: "/"
         },
         {
-            name: "Productos",
+            info: "Productos",
             path: "/products"
         },
         {
-            name: "Promociones",
+            info: "Promociones",
             path: "/promotions"
         },
         {
-            name: "Sobre Nosotros",
+            info: "Sobre Nosotros",
             path: "/about"
         }
     ];
@@ -53,22 +55,21 @@ const Nav =()=>{
                 <Link to="/" className="logo">Pizzería Don Remolo</Link>
                 <div className='nav-links'>
                     { links.map(link=>(
-                        <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
+                        <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.info}>{link.info}</Link>
                     )) }
                 </div>
                 <Link to="/" className="logo">Pizzería Don Remolo</Link>
                 <div className='nav-links'>
                     { links.map(link=>(
-                        <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.name}>{link.name}</Link>
+                        <Link className={location.pathname === link.path ? "active" : ""} to={link.path} key={link.info}>{link.info}</Link>
                     )) }
                 </div>
                 <div className='shoppingCart'>
-                    <Link to="/invoice" classname="cartIcon">
-                    <p>
-                        <FaShoppingCart /><span className='sumAmount'>{sumTotalAmount}</span>
-                    </p>
-                    
-                </Link>
+                    <Link to="/invoice" className="cartIcon">
+                        <p>
+                            <FaShoppingCart /><span className='sumAmount'>{sumTotalAmount}</span>
+                        </p>
+                    </Link>
                 </div>
             </div>
             { showSidebar && <Sidebar close={closeSidebar} links={links} /> }

@@ -1,15 +1,15 @@
-/* import '../Styles/styleList.css'; */
+import '../Styles/styleList.css';
 import React, { useState } from 'react';
 import Card from './Card.js';
-import ListOfProducts from '../helpers/data.js';
+import food from '../helpers/data.js';
 import {FaShoppingCart} from "react-icons/fa";
 
 let List = () => {
-    const {food} = ListOfProducts;
+    const {food} = food;
     const [products,setProducts] = useState(food);
     return (
     <div>
-        <FaShoppingCart />
+        {/* <FaShoppingCart /> */}
         {products.map((product) => {
             return(
                 <div>
@@ -26,12 +26,13 @@ let List = () => {
             )
     })}
         <button>Comprar</button> 
-    </div>);
+    </div>
+    );
 }
 
 export default List;
 
-/* import React, { useState } from 'react';
+/*  import React, { useState } from 'react';
 import Card from './Card.js';
 import ListOfTypes from '../helpers/type.js';
 
@@ -39,9 +40,7 @@ import ListOfTypes from '../helpers/type.js';
 let List = () => {
     const {types} = ListOfTypes;
     const [productType,setProductsType] = useState(types);
-    return(
-        
-    );
+    
     return (
     <div>
         {productType.map((productType) => {
@@ -59,7 +58,7 @@ let List = () => {
         </div>
         )
     })}
-</div>);
+</div>)
 }
 
 export default List; */

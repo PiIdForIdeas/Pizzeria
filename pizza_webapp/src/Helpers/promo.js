@@ -1,11 +1,11 @@
-const ListOfPromos = /*{
+const Promo = /*{
   food : */[
   {
       id:1,
       name:'1 Muzzarella grande + 1 Calabresa + 1 Brahama 1Ltr',
       type:'promos',
       size:'1 Mtrs',
-      price:2000,
+      price:2700,
       amount:1,
       img: "/img/muzzarella.jpg",
   },
@@ -14,7 +14,7 @@ const ListOfPromos = /*{
       name:'2 Napolitana + 1 Coca Cola 2.5Ltr',
       type:'pizzas',
       size:'Grande',
-      price:2000,
+      price:2500,
       amount:0,
       img: "/img/napolitana.jpg",
   },
@@ -32,11 +32,10 @@ const ListOfPromos = /*{
       name:'6 Empanadas de carne + 1 agua 500ml',
       type:'empanadas',
       size:'standard',
-      price:2000,
+      price:1800,
       amount:0,
       img: "/img/empanada_carne.jpg",
   }
 ]
 /*}*/;
-
-export default ListOfPromos;
+export default Promo

@@ -1,11 +1,11 @@
-/* import '../Styles/styleList.css'; */
-import React, { useState } from 'react';
+import '../Styles/styleList.css';
+import {useState} from "react";
 import Card from './Card.js';
-import ListOfProducts from '../helpers/data.js';
+import food from '../helpers/data.js';
 import PageNotFound from '../helpers/PageNotFound.js';
 
-let List = () => {
-    const {food} = ListOfProducts;
+/* let List = () => {
+    const {food} = food;
     const [products,setProducts] = useState(food);
     if(products.length > 0){
         return (
@@ -13,7 +13,6 @@ let List = () => {
         {products.map((product) => {
         return(
             <div>
-                {/* <Nav countProducts={products.length} /> */}
                 <Card 
                     img={product.img}
                     key={product.id}
@@ -21,7 +20,6 @@ let List = () => {
                     type={product.size} 
                     amount={product.amount}
                     price={product.price}
-
                 />
             </div>
         )
@@ -29,8 +27,20 @@ let List = () => {
     )}
     </div>);
     } else{
-        const PageNotFound = <PageNotFound />
+        return(
+            <div>
+                <PageNotFound />
+            </div>
+        )  
     }
+} */
+
+const List = () => {
+    return(
+        <div>
+            <p>Da error mostrar productos</p>
+        </div>
+    )
 }
 
 export default List;

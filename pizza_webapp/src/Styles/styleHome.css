@@ -5,12 +5,38 @@ body{
     background-color: rgb(233, 233, 233);   
     color: rgb(0, 0, 0);
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.stars{
-    color:rgba(212, 212, 14, 0.548);
-    display:flex;
-    flex-direction: row;
+.ListProducts{
+    display: flex;
+    width: 100%;
+}
+.promo, .opinion{
+    display: flex;
+    color: black;
+    border-radius: 15px;
+    margin: 0.2em;
+}
+.promoName{
+    text-align: left;
+    font-weight: bold;
+}
+.promoInfo{
+    text-align: justify;
+}
+.promoPrice{
+    color: #E74423;
+    text-align: right;
+    font-weight: bold;
+    /*margin-right: 2em;*/
 }
 .testimoniosText{
-    color: rgb(65, 165, 118);
+    color: rgb(97, 9, 9);
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    color: #EED600;
+    margin: 0 1em;
 }

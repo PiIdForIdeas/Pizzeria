@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/styleAbout.css';
-import Nav from '../components/Nav.js';
-import Footer from '../components/Footer.js';
+/* import Nav from '../components/Nav.js';
+import Footer from '../components/Footer.js'; */
 
 const About = () => (
   <section className="About">

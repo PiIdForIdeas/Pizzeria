@@ -1,8 +1,7 @@
 /* import '../Styles/styleHome.css'; */
 import React from 'react';
-import '../Styles/styleCarousel.css';
 
-let Promo = (props) => {
+const Promo = (props) => {
     return(
         <div className='promo'>
             <img src={props.img} alt={props.name} />
