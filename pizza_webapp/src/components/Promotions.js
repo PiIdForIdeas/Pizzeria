@@ -1,32 +1,29 @@
-/* import '../Styles/styleHome.css'; */
 import React, {useState} from 'react';
-import Promo from '../helpers/promo.js';
+
+import Promo from './Promo.js';
+import dataPromo from '../helpers/datapromo.js';
+
+import '../Styles/styleHome.css';
 
 const Promotions = ()=>{
-    const {food} = Promo;
-    const [products,setProducts] = useState(food);
-    /* return(
-        <div>
-            { products.map((product)=> {
-                return(
-                    <Promo 
-                    img={product.img}
-                    key={product.id}
-                    name={product.name} 
-                    type={product.size} 
-                    price={product.price} 
-                    />
-                )
-            })
-            }
-        </div>
-    ) */
+    const [promotionProducts] = useState(dataPromo);
     return(
-        <div>
-            <p>Da error al querer mostrar promociones</p>
+        <div className='promotions'>
+            {promotionProducts.map((promotionProduct) => {
+                return(
+                    <div className='promo'>
+                        <Promo
+                            img={promotionProduct.img}
+                            key={promotionProduct.id}
+                            name={promotionProduct.name} 
+                            type={promotionProduct.size} 
+                            price={promotionProduct.price} 
+                        />
+                    </div>
+                )
+            })}
         </div>
     )
-    
 };
 
 export default Promotions;

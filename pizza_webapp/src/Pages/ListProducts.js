@@ -1,7 +1,9 @@
 import React from 'react';
+
 import List from '../components/List.js';
 import ListOfProducts from '../helpers/data';
 import ListType from '../components/ListType.js';
+
 import '../App.css';
 
 function ListProducts() {

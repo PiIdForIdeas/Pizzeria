@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import Sidebar from "./NavSidebar.js";
 import food from '../helpers/data.js';
-import ListOfPromos from '../helpers/promo.js';
+import ListOfPromos from '../helpers/datapromo.js';
 
 import '../Styles/styleNav.css';
 

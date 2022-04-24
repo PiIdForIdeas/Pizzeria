@@ -1,4 +1,4 @@
-const Promo = /*{
+const dataPromo = /*{
   food : */[
   {
       id:1,
@@ -38,4 +38,4 @@ const Promo = /*{
   }
 ]
 /*}*/;
-export default Promo
+export default dataPromo

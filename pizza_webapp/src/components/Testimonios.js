@@ -1,10 +1,11 @@
-/*import '../Styles/styleHome.css';*/
 import React, { useState } from 'react';
+
 import Opinion from './Opinion.js';
 import dataOpinion from '../helpers/dataOpinion.js';
-/* import '../Styles/styleHome.css'; */
-//import {FaRegStar} from "react-icons/fa";
 
+import '../Styles/styleHome.css';
+
+//import {FaRegStar} from "react-icons/fa";
 
 let Testimonios = () => {
     

@@ -34,6 +34,12 @@
   }
 } */
 
+.error{
+  /* etiqueta creada para cuando se encuentra un error y se quiere remarcar */
+  color: #ff0000;
+  font-style: oblique;
+}
+
 
 .btn{
   width: 10em;
